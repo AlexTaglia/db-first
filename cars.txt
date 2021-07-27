@@ -1,0 +1,24 @@
+name: cars
+
+
+Column          	Type                	Attributes                  Index
+
+id                  BIGINT UNSIGNED     	AUTO_INCREMENT, NOT NULL    PRIMARY KEY
+brand			    VARCHAR(255)        	NOT NULL			        INDEX
+model			    VARCHAR(255)        	NOT NULL			        INDEX
+matriculation	    YEAR              	    NOT NULL
+km_traveled		    MEDIUMINT UNSIGNED     	NOT NULL
+version  		    VARCHAR(255)		    NULL
+hp			        SMALLINT UNSIGNED     	NOT NULL
+car_body		    VARCHAR(255)		    NULL
+fuel			    VARCHAR(255)		    NOT NULL
+emissions		    VARCHAR(255)		    NULL
+novice_drivers	    VARCHAR(2)          	NULL
+n_seats			    TINYINT UNSIGNED        NOT NULL
+n_doors			    TINYINT UNSIGNED        NOT NULL
+gear			    VARCHAR(255)		    NOT NULL
+previous_owners	    TINYINT UNSIGNED        NULL
+price			    MEDIUMINT UNSIGNED     	NOT NULL
+description		    TEXT			        NULL  
+displacement	    SMALLINT UNSIGNED     	NOT NULL
+chassis_number	    VARCHAR(255)         	NULL, UNIQUE                
